@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body{
+	font-family: "Lato";
+	
+	color: rgb(82, 80, 80);
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main{
+	flex-grow: 1;
+}
+
+[class*="__container"]{
+	max-width: 1245px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header{
+	text-align: center;
+	text-shadow: 1px 1px 5px rgb(69, 69, 69);
+	padding-bottom: 15px;
+	background-color: #807f7f7b;
+}
+
+.header__title h1{
+	font-size: 25px;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+.header__subtitle h3{
+	padding: 5px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.page__block{
+	background-color: rgb(173, 172, 172);
+}
+
+.form__line:not(:last-child){
+	margin-bottom: 25px;
+}
+
+.form__label{
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.form__input {
+	padding: 0px 10px;
+	height: 30px;
+	color: #000000;
+}
+
+.form__title{
+	font-size: 18px;
+}
+
+.form__title:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.form__input-radio{
+	width: auto;
+	vertical-align: middle;
+}
+
+.checkbox{
+	position: relative;
+}
+.checkbox__input{
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+	background:#121212 url('../img/icons/check.svg') center / 70% no-repeat;
+}
+.checkbox__label {
+	cursor: pointer;
+	display: inline-flex;
+	gap: 10px;
+}
+.checkbox__label::before{
+	content:"";
+	flex: 0 0 25px;
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
+	background-color: #848383;
+}
+.checkbox__text {
+	align-self: center;
+	font-size: 18px;
+}
+
+.form__area{
+	width: 100%;
+	padding: 15px;
+	height: 100px;
+	resize: vertical;
+}
+
+.form__button{
+	background-color: #939292;
+	padding: 15px;
+	transition: all 0.3s ease 0s;
+	border-radius: 5px;
+}
+.form__button:hover{
+	transform: translate(0px,3px);
+	background-color: #626262;
+	color: white;
+}
+
+.button{
+	display: flex;
+	justify-content: space-around;
+}
+
+.second-block{
+	position: relative;
+	padding: 180px 0px 180px 0px;
+}
+
+.second-block__container{
+	position: relative;
+	z-index: 2;
+}
+
+.second-block__body{
+	display: flex;
+}
+
+.second-block__media{
+	flex: 0 1 35%;
+}
+
+.second-block__content{
+	flex: 1 1 65%;
+	padding-left: 105px;
+}
+
+.second-block__image{
+	max-width: 100%;
+}
+
+.second-block__title{
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title-second__subtitle{
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.title-second__subtitle:not(:last-child){
+	margin-bottom: 8px;
+}
+
+.title-second__title{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+}
+
+.second-form{
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	margin: 0 -12.5px;
+}
+
+.second-form__line{
+	flex: 0 1 50%;
+	padding: 0 12.5px;
+}
+
+.second-form__label{
+	margin-bottom: 8px;
+	display: inline-block;
+}
+
+.second-form__input,
+textarea{
+	padding: 15px;
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+}
+
+.second-form__textarea{
+	padding: 0 12.5px;
+	margin-bottom: 48px;
+}
+
+.second-form__message{
+	resize: none;
+	min-height: 128px;
+	min-width: 705px;
+	width: 100%;
+	overflow: auto;
+}
+
+.ckbox{
+	position: relative;
+}
+
+.ckbox__input{
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.ckbox__input:checked + .ckbox__label::before {
+	background:#FF3F3A url('../img/icons/check02.svg') center / 70% no-repeat;
+}
+
+.ckbox__label{
+	cursor: pointer;
+	display: inline-flex;
+	gap: 12px;
+}
+
+.ckbox__label::before{
+	content:"";
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	border-radius: 3px;
+	background-color: #FF3F3A;
+}
+
+.ckbox__text{
+	line-height: 26px;
+}
+
+.second-form__button{
+	width: 100%;
+	border-radius: 4px;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #fff;
+	display: inline-block;
+	padding: 16px 40px;
+	position: relative;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+.second-form__button span{
+	position: relative;
+	z-index: 2;
+}
+
+.second-form__button::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: opacity 0.3s ease 0s;
+	opacity: 0;
+	border-radius: 4px;
+	background: linear-gradient(55.95deg, #ca3530 0%, #c94d05 100%);
+}
+.second-form__button:hover::before {
+	opacity: 1;
+}

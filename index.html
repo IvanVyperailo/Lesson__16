@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__title">
+				<h1>Анкета</h1>
+			</div>
+			<div class="header__subtitle">
+				<h3>Набір на курс з верстки з Фрілансером по життю!</h3>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__block">
+				<div class="page__container">
+					<form class="form" method="POST" enctype="multipart/form-data" action="#">
+						<div class="form__line">
+							<label class="form__label" for="name">Введіть ім'я та призвіще</label>
+							<input class="form__input" id="name" required autocomplete="off"
+								placeholder="Введіть ім'я та призвіще" name="name" type="text">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="age">Введіть ваш вік</label>
+							<input class="form__input" id="age" required autocomplete="off" placeholder="Введіть ваш вік"
+								name="age" type="text">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="city">Введіть ваше місто</label>
+							<input class="form__input" id="city" required autocomplete="off" placeholder="Введіть ваше місто"
+								name="city" type="text">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="email-01">Введіть ваш E-mail</label>
+							<input class="form__input" id="email-01" required autocomplete="off"
+								placeholder="Введіть ваш E-mail" name="email" type="email">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="phon">Введіть ваш телефон</label>
+							<input class="form__input" id="phon" required autocomplete="off" placeholder="Введіть ваш телефон"
+								name="phone" type="tel">
+						</div>
+						<div class="form__line">
+							<div class="form__title">Звідки ви дізнались про курс?</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="social-01" required value="friend"
+									name="social" type="radio">
+								<label class="form__label" for="social-01">Друзі порекомендували</label>
+							</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="social-02" required name="social"
+									value="ethernet" type="radio">
+								<label class="form__label" for="social-02">В інтернеті</label>
+							</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="social-03" required name="social"
+									value="social-media" type="radio">
+								<label class="form__label" for="social-03">Соціальні мережі</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__title">Який у вас рівень розуміння IT сфери?</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="level-01" required value="easy" name="level"
+									type="radio">
+								<label class="form__label" for="level-01">Початківець</label>
+							</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="level-02" required name="level" value="medium"
+									type="radio">
+								<label class="form__label" for="level-02">Просунутий</label>
+							</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="level-03" required name="level" value="hard"
+									type="radio">
+								<label class="form__label" for="level-03">IT майстер</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="col">Який ваш улюбленний колір ?</label>
+							<input class="form__input" id="col" autocomplete="off" name="color" value="#ffffff" type="color">
+						</div>
+						<div class="form__line">
+							<div class="checkbox">
+								<input id="seminar" type="checkbox" value="yes" name="seminar" class="checkbox__input">
+								<label for="seminar" class="checkbox__label"><span class="checkbox__text">Чи хотіли би ви офлайн
+										зустріч - семінар з Євгенієм Андриканичем?</span></label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="checkbox">
+								<input id="valera" type="checkbox" value="yes" name="valera" class="checkbox__input">
+								<label for="valera" class="checkbox__label"><span class="checkbox__text">Чи подобається вам ім'я
+										Валера?</span></label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="checkbox">
+								<input id="rover" type="checkbox" value="yes" name="rover" class="checkbox__input">
+								<label for="rover" class="checkbox__label"><span class="checkbox__text">Хто за те, щоб інколи
+										збиратись на велопрогулянку ?</span></label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__title">Оберіть дні по яким би вам хотілось займатись курсами з верстки ?</div>
+							<select multiple name="list">
+								<option value="1">Понеділок / П'ятниця</option>
+								<option value="2">Вівторок / Субота</option>
+								<option value="3">Середа / Субота</option>
+								<option value="4">Четвер / Неділя</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<div class="form__title">Слава Україні!!!</div>
+							<div class="checkbox">
+								<input id="ukr1" type="checkbox" value="yes" name="ukr1" class="checkbox__input">
+								<label for="ukr1" class="checkbox__label"><span class="checkbox__text">Героям
+										Слава!</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="ukr2" type="checkbox" value="yes" name="ukr2" class="checkbox__input">
+								<label for="ukr2" class="checkbox__label"><span class="checkbox__text">Слава
+										Нації!</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="ukr3" type="checkbox" value="yes" name="ukr3" class="checkbox__input">
+								<label for="ukr3" class="checkbox__label"><span class="checkbox__text">Пи**ець російській
+										федерації!</span></label>
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__title">Напишіть чому саме верстка вас зацікавила:</div>
+							<textarea autocomplete="off" name="message" placeholder="Введення тексту"
+								class="form__area"></textarea>
+						</div>
+						<div class="form__line">
+							<div class="form__title">Додати файл:</div>
+							<input class="form__input" name="file" accept="image/png, image/jpeg" multiple type="file">
+						</div>
+						<div class="form__line">
+							<div class="button">
+								<button class="form__button" type="reset">Обнулити анкету</button>
+								<button class="form__button" type="submit">Відправити анкету</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="page__second-block second-block">
+				<div class="second-block__container">
+					<div class="second-block__body">
+						<div class="second-block__media">
+							<img class="second-block__image" src="img/illustration.svg" alt="Image">
+						</div>
+						<div class="second-block__content content-block">
+							<div class="second-block__title title-second">
+								<div class="title-second__subtitle">Any questions?</div>
+								<div class="title-second__title">Drop us a line</div>
+							</div>
+							<div class="content-block__forms">
+								<form class="second-form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+									<div class="second-form__line">
+										<label class="second-form__label" for="f-name">First Name*</label>
+										<input class="second-form__input" id="f-name" required autocomplete="off"
+											placeholder="Your first name" name="first-name" type="text">
+									</div>
+									<div class="second-form__line">
+										<label class="second-form__label" for="l-name">Last Name*</label>
+										<input class="second-form__input" id="l-name" required autocomplete="off"
+											placeholder="Your last name" name="last-name" type="text">
+									</div>
+									<div class="second-form__line">
+										<label class="second-form__label" for="email">Email*</label>
+										<input class="second-form__input" id="email" required autocomplete="off"
+											placeholder="Your working email" name="mail" type="email">
+									</div>
+									<div class="second-form__line">
+										<label class="second-form__label" for="phone">Phone</label>
+										<input class="second-form__input" id="phone" autocomplete="off"
+											placeholder="Your phone number" name="telephone" type="tel">
+									</div>
+									<div class="second-form__textarea">
+										<label class="second-form__label" for="message">Message*</label>
+										<textarea class="second-form__message" id="message" required autocomplete="off"
+											name="message" placeholder="Your message"></textarea>
+									</div>
+									<div class="second-form__line">
+										<div class="ckbox">
+											<input class="ckbox__input" id="checkbox" required value="yes" name="I-agree"
+												type="checkbox">
+											<label class="ckbox__label" for="checkbox"><span class="ckbox-text">I
+													agree to receive communications from
+													Createx Online School</span></label>
+										</div>
+									</div>
+									<div class="second-form__line">
+										<button class="second-form__button" type="submit"><span>Send message</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
